@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jewelry Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Custom Styles */
+        .jewelry-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .jewelry-card {
+            padding: 16px;
+            margin: 16px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .jewelry-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .jewelry-card:hover .jewelry-image {
+            transform: scale(1.05);
+        }
+        .jewelry-card button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .jewelry-card button:hover {
+            background-color: #555;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+    <img class="w3-image" src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Jewelry Banner" width="1500" height="600">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Jewelry Store</h1>
+        <h5 class="w3-hide-large" style="white-space:nowrap">Jewelry Store</h5>
+        <h3 class="w3-hide-medium w3-hide-small">Elegance Redefined</h3>
+    </div>
+  
+    <!-- Navbar (placed at the bottom of the header image) -->
+    <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small sticky-nav" style="bottom:-16px">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#products" class="w3-bar-item w3-button">Products</a>
+        <a href="#about" class="w3-bar-item w3-button">About Us</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#cart" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium sticky-nav">
+    <div class="w3-bar w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#products" class="w3-bar-item w3-button">Products</a>
+        <a href="#about" class="w3-bar-item w3-button">About Us</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#cart" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="products">
+
+    <!-- Product Section -->
+    <h2 class="w3-center">Our Products</h2>
+    <div class="w3-row-padding">
+        <!-- Product 1 -->
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="jewelry-card">
+                <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Diamond Ring" class="jewelry-image">
+                <h3>Diamond Ring</h3>
+                <p>$500.00</p>
+                <button onclick="window.location.href='product1.html'">View Details</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="jewelry-card">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Gold Necklace" class="jewelry-image">
+                <h3>Gold Necklace</h3>
+                <p>$700.00</p>
+                <button onclick="window.location.href='product2.html'">View Details</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="jewelry-card">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pearl Earrings" class="jewelry-image">
+                <h3>Pearl Earrings</h3>
+                <p>$300.00</p>
+                <button onclick="window.location.href='product3.html'">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="about">
+        <h3 class="w3-center">About Us</h3>
+        <hr>
+        <p>Welcome to Jewelry Store, where elegance meets craftsmanship. We specialize in creating exquisite jewelry pieces that reflect timeless beauty and sophistication. Our mission is to provide our customers with high-quality jewelry that celebrates life's special moments.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+        <h3 class="w3-center">Contact Us</h3>
+        <hr>
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" required name="Name">
+            </div>
+            <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="text" required name="Email">
+            </div>
+            <div class="w3-section">
+                <label>Message</label>
+                <textarea class="w3-input w3-border" required name="Message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+        </form>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-16">
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2023 Jewelry Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
